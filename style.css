@@ -11,6 +11,15 @@ body {
     text-align: center;
 }
 
+#heading {
+    text-align: left;
+    margin: 0;
+    padding: 0.5rem 20px;
+    background-color: #237D1B;
+    color: rgb(253, 226, 0);
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

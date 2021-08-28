@@ -10,11 +10,12 @@ address.value = "ban_1otteryrgctx8xw3z6cx1rku76hozn4xb48pktcqedjkpjoh78xx5thcsgd
 address.style.width = address.scrollWidth + "px"
 const copy = document.getElementById("copy")
 copy.addEventListener("click", () => {
-    address.select()
-    copy.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copy.value);
+    navigator.clipboard.writeText(address.value);
     copy.innerText = "Copied!"
     setTimeout(() => {
         copy.innerText = "Copy"
     }, 1000)
+})
+document.getElementById("heading").addEventListener("click", () => {
+    window.history.pushState({}, document.title, "/");
 })
